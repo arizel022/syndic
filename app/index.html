@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбешоп Syndic</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo" title="вернуться на главную страницу Syndic">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип барбершопа Syndic">
+        </a>
+        <nav class="menu">
+            <ul class="menu__top">
+                <li class="menu__top-item">
+                    <button type="button" class="menu__top-btn menu__top-btn--contact button" id="cont">
+                        Хотите записаться?
+                    </button>
+                </li>
+                <li class="menu__top-item">
+                    <button type="button" class="menu__top-btn menu__top-btn--location button" id="loc">
+                        Как нас найти
+                    </button>
+                </li>
+            </ul>
+            <ul class="menu__bottom">
+                <li class="menu__bottom-item">
+                    <button type="button" class="menu__bottom-btn button" id="main">
+                        Главная
+                    </button>
+                </li>
+                <li class="menu__bottom-item">
+                    <button type="button" class="menu__bottom-btn button" id="about">
+                        О нас
+                    </button>
+                </li>
+                <li class="menu__bottom-item">
+                    <button type="button" class="menu__bottom-btn button" id="price">
+                        Прайс
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero section">
+            <div class="section__content">
+                <h1 class="hero__title">
+                    Syndic
+                    <span class="hero__subtitle">Лучшие мужские стрижки в Варшаве</span>
+                </h1>
+                <p class="hero__text">
+                    Барбершоп Syndic гордится тем, что служит нашему местному сообществу, предлагая стиль, культуру и
+                    комфорт с 2012 года, по одной стрижке за раз.
+                </p>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="section__content">
+                <h2 class="title">
+                    барбершоп syndic
+                </h2>
+                <p class="about__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatibus saepe, eius at et hic
+                    voluptates doloremque suscipit facere corrupti cumque laboriosam porro ab exercitationem ullam. Eos
+                    distinctio laborum eum.
+                    Ex odit libero iure doloremque ullam ap
+                    eriam vitae assumenda. Provident ducimus asperiores quidem, suscipit nisi cupiditate rerum ipsum
+                    laboriosam, at voluptatem laudantium repellendus culpa aut id maxime temporibus dolorum? Officiis.
+                    Veniam suscipit ducimus eligendi ea ab nisi, iste a consequatur architecto unde accusamus qui rerum
+                    veritatis aperiam, eius recusandae autem voluptate impedit dignissimos laudantium quas velit! Itaque
+                    perspiciatis nesciunt eligendi?
+                </p>
+            </div>
+        </section>
+
+        <section class="price section">
+            <div class="section__content">
+                <h2 class="title">
+                    прайс
+                </h2>
+                <ul class="price__list">
+                    <li class="price__item">
+                        <p class="price__name">apprentice haircut</p>
+                        <span class="price__cost">free</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">kids haircut/scissor cut</p>
+                        <span class="price__cost">£10.00</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">teens haircut/scissor cut</p>
+                        <span class="price__cost">£15.00</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">shape up</p>
+                        <span class="price__cost">£10.00</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">scissor cut adult</p>
+                        <span class="price__cost">£20.00</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">full cut (hair & beard)</p>
+                        <span class="price__cost">£20.00</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">pattern (design)</p>
+                        <span class="price__cost">£25.00</span>
+                    </li>
+                    <li class="price__item">
+                        <p class="price__name">special cut (hair - wet shave)</p>
+                        <span class="price__cost">£25.00</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cont section">
+            <div class="section__content">
+                <h2 class="title">
+                    как с нами связаться
+                </h2>
+                <span class="cont__inner">
+                    <a class="cont__mail" href="mailto:manager@syndic.com"
+                        title="написать на email барбершопа Syndic">manager@syndic.com</a>
+                    <a class="cont__phone" href="tel:+380440000000" title="позвонить в барбершоп Syndic по телефону">+48
+                        22 000 00 00</a>
+                </span>
+                <form class="form" method="POST" action="mail.php" name="form">
+                    <span class="sr-only">Форма обратной связи для отправки сообщения в барбершоп Syndic</span>
+                    <div class="form__top">
+                        <label class="form__label" for="">
+                            Как к вам обращаться?
+                            <input type="text">
+                        </label>
+                        <label class="form__label" for="">
+                            Ваш телефон или почта
+                            <input type="phone">
+                        </label>
+                    </div>
+                    <label  class="form__label" for="" id="txt-label">
+                        Ваше сообщение
+                        <textarea name="" id="" rows="4"></textarea>
+                    </label>
+                    <button class="form__btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="loc section">
+            <div class="section__content">
+                <h2 class="title">
+                    мы находимся
+                </h2>
+                <adress class="loc__adress">
+                    plac Zamkowy 4, 00-277 Warszawa
+                </adress>
+                <div class="loc__map"></div>
+            </div>
+        </section>
+
+
+        <section class="media">
+
+            <ul class="media__slider">
+                <li class="media__item">
+                    <img class="media__img" src="images/slider/slide1.jpg" alt="">
+                </li>
+                <li class="media__item">
+                    <img class="media__img" src="images/slider/slide2.jpg" alt="">
+                </li>
+                <li class="media__item">
+                    <img class="media__img" src="images/slider/slide3.jpg" alt="">
+                </li>
+            </ul>
+
+            <div class="media__bottom">
+                <div class="media__man"></div>
+                <button class="media__btn" type="button">
+                    <h2 class="media__title">Посмотреть работы</h2>
+                    <span class="media__subtitle">Syndic collection</span>
+                </button>
+            </div>
+
+            <div class="gallery">
+                <button class="gallery__btn" type="button"></button>
+                <ul class="gallery__slider">
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/1.jpg" alt="">
+                    </li>
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/2.jpg" alt="">
+                    </li>
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/3.jpg" alt="">
+                    </li>
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/4.jpg" alt="">
+                    </li>
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/5.jpg" alt="">
+                    </li>
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/6.jpg" alt="">
+                    </li>
+                    <li class="gallery__slide">
+                        <img class="gallery__img" src="images/galery/7.jpg" alt="">
+                    </li>
+                </ul>
+                <ul class="gallery__nav">
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/1.jpg" alt="">
+                    </li>
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/2.jpg" alt="">
+                    </li>
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/3.jpg" alt="">
+                    </li>
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/4.jpg" alt="">
+                    </li>
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/5.jpg" alt="">
+                    </li>
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/6.jpg" alt="">
+                    </li>
+                    <li class="gallery__nav-item">
+                        <img class="gallery__img" src="images/galery/7.jpg" alt="">
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

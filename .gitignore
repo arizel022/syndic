@@ -1,7 +1,12 @@
 .DS_Store
-.AppleDouble
-.LSOverride
-.vs
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
 
+package-lock.json
+dist/
 node_modules/
-loc
+loc/
+project-start.txt
